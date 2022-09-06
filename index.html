@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basket ball panel</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1>Panneau d'affichage de score</h1>
+    </header>
+    <section class="score">
+        <div class="counter">
+            <p id="progressBar">20s</p>
+        </div>
+        <button id="start" onclick="timesToEnd()">Start the game</button>
+
+        <p id="scoretoshow"> </p>
+        <div class="section-score">
+            <div class="box">
+                <h3>Home</h3>
+                <div class="box-Title">
+
+                    <p id="g-score-1">0</p>
+                </div>
+
+                <button id="btn-1" onclick="addHome1()">+1</button>
+                <button id="btn-2" onclick="addHome2()">+2</button>
+                <button id="btn-3" onclick="addHome3()">+3</button>
+
+            </div>
+
+            <div class="box">
+                <h3>Guest</h3>
+                <div class="box-Title">
+                    <p id="g-score-2">0</p>
+                </div>
+                <button id="btn-a" onclick="addGuest1()">+1</button>
+                <button id="btn-b" onclick="addGuest2()">+2 </button>
+                <button onclick="addGuest3()">+3</button>
+            </div>
+        </div>
+
+    </section>
+    <button class=" reset " onclick="reset()"> Restart game</button>
+    <script src="index.js "></script>
+</body>
+
+</html>
